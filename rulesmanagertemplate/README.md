@@ -2,6 +2,9 @@
 As an application developer or OEM partners, you can use this template to embed SAPUI5 RulesBuilder control, of SAP Cloud Platform Business Rules, in your smart process 
 application and enable business users to modify their business policies directly from the application, without the need to know the application logic.
 
+## Solution Diagram
+![Solution Diagram](https://github.com/SAP/cloud-businessrules-templates/blob/master/rulesmanagertemplate/webapp/images/BusinessRules_RulesBuilderControl_Diagram.png)
+
 ## Getting Started
 Clone the repository, git clone https://github.com/SAP/cloud-businessrules-templates
 
