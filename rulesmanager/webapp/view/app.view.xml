@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.sap.cloud.samples.businessrules.rulesmanagertemplate.controller.app" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:rules="sap.rules.ui">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<!-- Step 2: Add the RulesBuilder control to application view -->
+			
+			
+				<!-- Step 4: Add the button controls to manage lifecycle of rule-->
+				<footer>
+					<Toolbar id="actionsToolbar">
+						<ToolbarSpacer/>
+						<Button id="editButton" text="Edit" type="Accept" press="onEditPress" enabled="{path:'IsDraft', formatter: '.formatterNotIsDraft' }"/>
+						<Button id="deployButton" text="Deploy" type="Emphasized" press="onDeployPress" visible="false"/>
+						<Button id="cancelButton" text="Cancel" type="Reject" press="onCancelPress" visible="false"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
