@@ -1,3 +1,0 @@
-<content>
-<rules:RuleBuilder id="ruleBuilder" types="DecisionTable" editable="{path:'IsDraft', formatter: '.formatterIsDraft' }"/>
-</content>
