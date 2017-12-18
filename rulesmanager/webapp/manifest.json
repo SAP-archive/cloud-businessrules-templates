@@ -1,7 +1,7 @@
 {
 	"_version": "1.7.0",
 	"sap.app": {
-		"id": "com.sap.cloud.samples.businessrules.rulesmanagertemplate",
+		"id": "com.sap.cloud.samples.businessrules.rulesmanager",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -39,7 +39,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "com.sap.cloud.samples.businessrules.rulesmanagertemplate.view.app",
+			"viewName": "com.sap.cloud.samples.businessrules.rulesmanager.view.app",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -57,7 +57,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.sap.cloud.samples.businessrules.rulesmanagertemplate.i18n.i18n"
+					"bundleName": "com.sap.cloud.samples.businessrules.rulesmanager.i18n.i18n"
 				}
 			}
 		},
@@ -71,7 +71,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "com.sap.cloud.samples.businessrules.rulesmanagertemplate.view",
+				"viewPath": "com.sap.cloud.samples.businessrules.rulesmanager.view",
 				"controlAggregation": "pages",
 				"controlId": "idAppControl"
 			},

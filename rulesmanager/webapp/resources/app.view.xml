@@ -4,8 +4,9 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<!-- Step 2: Add the RulesBuilder control to application view -->
-			
-			
+				<content>
+					<rules:RuleBuilder id="ruleBuilder" types="DecisionTable" editable="{path:'IsDraft', formatter: '.formatterIsDraft' }"/>
+				</content>
 				<!-- Step 4: Add the button controls to manage lifecycle of rule-->
 				<footer>
 					<Toolbar id="actionsToolbar">

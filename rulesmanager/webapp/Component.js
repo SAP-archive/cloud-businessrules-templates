@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"com/sap/cloud/samples/businessrules/rulesmanagertemplate/model/models"
+	"com/sap/cloud/samples/businessrules/rulesmanager/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("com.sap.cloud.samples.businessrules.rulesmanagertemplate.Component", {
+	return UIComponent.extend("com.sap.cloud.samples.businessrules.rulesmanager.Component", {
 
 		metadata: {
 			manifest: "json"
