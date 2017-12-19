@@ -19,10 +19,10 @@ You need to have the following:
 4. SAP WebIDE Full-Stack service enabled in SAP Cloud Platform.
 
 ## Project Overview
-This template is an SAPUI5 Application with standard folder structure. The key files description are as follows:
+This template is an SAPUI5 Application with standard folder structure. The key files and folder description are as follows:
 1. webapp/view/app.view.js - This is the main file where you will learn how-to embed the RulesBuilder SAPUI5 control in the application.
-2. webapp/controller/app.controller.js - This file will contain the implementation to (a) Initialize business rules vocabulary and decision table models, (b) Setup Rule Builder control and associate rule expression language to it and (c) Implement button control to drive the lifecycle of the business rules like Edit, Save, Activate and Deploy 
-3. webapp/snippets - This folder contains the code snippet that will be inserted in the template
+2. webapp/controller/app.controller.js - This file will contain the implementation to (a) Initialize business rules vocabulary and decision table models, (b) Setup Rule Builder control and associate rule expression language to it and (c) Implement button control to drive the lifecycle of the business rules like Edit, Save, Activate and Deploy.
+3. webapp/snippets - This folder contains the code snippets that will be inserted in the template during the learning session.
 4. webapp/resources - This folder contains the source files for view and controller for reference.
 
 ## Deployment
