@@ -5,7 +5,10 @@ As an application developer or OEM partners, you can use this template to embed 
 ![Solution Diagram](https://github.com/SAP/cloud-businessrules-templates/blob/master/rulesmanagertemplate/webapp/images/BusinessRules_RulesBuilderControl_Diagram.png)
 
 ## Getting Started
-Clone the repository, git clone https://github.com/SAP/cloud-businessrules-templates
+1. Download the content from the git: https://github.com/SAP/cloud-businessrules-templates
+2. Extract the content into local file system
+3. Zip all the content inside /cloud-businessrules-templates-master/rulesmanager folder
+4. Open SAP Web IDE Full-Stack and import the zip using File --> Import --> From File System option
 
 ### Prerequisites
 You need to have the following:
