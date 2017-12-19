@@ -1,4 +1,4 @@
-# Use SAPUI5 Application Template to Author and Manage SAP Cloud Platform Business Rule 
+# Use SAPUI5 Application Template to Author and Manage SAP Cloud Platform Business Rules
 As an application developer or OEM partners, you can use this template to embed SAPUI5 Rule Builder control, of SAP Cloud Platform Business Rules, in your smart process application and enable business users to modify their business policies directly from the application, without the need to know the application logic.
 
 ## Solution Diagram
