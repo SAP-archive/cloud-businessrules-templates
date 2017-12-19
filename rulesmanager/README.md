@@ -8,7 +8,7 @@ As an application developer or OEM partners, you can use this template to embed 
 1. Download the content from the git: https://github.com/SAP/cloud-businessrules-templates
 2. Extract the content into local file system
 3. Zip all the content inside /cloud-businessrules-templates-master/rulesmanager folder
-4. Open SAP Web IDE Full-Stack and import the project zip using File --> Import --> From File System option
+4. Open SAP Web IDE Full-Stack and import the project zip using File --> Import --> From File System option.
 Note: While importing ensure that the project name is rulesmanager
 
 ### Prerequisites
@@ -22,6 +22,8 @@ You need to have the following:
 This template is an SAPUI5 Application with standard folder structure. The key files description are as follows:
 1. webapp/view/app.view.js - This is the main file where you will learn how-to embed the RulesBuilder SAPUI5 control in the application.
 2. webapp/controller/app.controller.js - This file will contain the implementation to (a) Initialize business rules vocabulary and decision table models, (b) Setup Rule Builder control and associate rule expression language to it and (c) Implement button control to drive the lifecycle of the business rules like Edit, Save, Activate and Deploy 
+3. webapp/snippets - This folder contains the code snippet that will be inserted in the template
+4. webapp/resources - This folder contains the source files for view and controller for reference.
 
 ## Deployment
 After you have implemented the view and controller, you can deploy the SAPUI5 application in your SAP Cloud Platform tenant. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
