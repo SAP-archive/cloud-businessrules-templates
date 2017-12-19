@@ -1,4 +1,4 @@
-# Template to Embed SAPUI5 Rule Builder Control in your Application
+# Use SAPUI5 Application Template to Author and Manage SAP Cloud Platform Business Rule 
 As an application developer or OEM partners, you can use this template to embed SAPUI5 Rule Builder control, of SAP Cloud Platform Business Rules, in your smart process application and enable business users to modify their business policies directly from the application, without the need to know the application logic.
 
 ## Solution Diagram
@@ -13,7 +13,7 @@ Note: While importing ensure that the project name is rulesmanager
 
 ### Prerequisites
 You need to have the following:
-1. SAP Cloud Platform (Neo) tenant with an active subscription to Business Rules service.Refer [here](https://blogs.sap.com/2017/04/26/sap-cloud-platform-business-rules-try-it-yourself/) for information on getting a free trial account of SAP Cloud Platform and how to enable SAP Cloud Platform Business Rules Service.
+1. SAP Cloud Platform (Neo) account with an active subscription to Business Rules service.Refer [here](https://blogs.sap.com/2017/04/26/sap-cloud-platform-business-rules-try-it-yourself/) for information on getting a free trial account of SAP Cloud Platform and how to enable SAP Cloud Platform Business Rules Service.
 2. RuleSuperUser role for Runtime and Repository operations.
 3. Developer role to create and deploy SAPUI5 applications in SAP Cloud Platform.
 4. SAP WebIDE Full-Stack service enabled in SAP Cloud Platform.
@@ -26,7 +26,7 @@ This template is an SAPUI5 Application with standard folder structure. The key f
 4. webapp/resources - This folder contains the source files for view and controller for reference.
 
 ## Deployment
-After you have implemented the view and controller, you can deploy the SAPUI5 application in your SAP Cloud Platform tenant. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
+After you have implemented the view and controller, you can deploy the SAPUI5 application in your SAP Cloud Platform account. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
 
 ## Authors
 Archana Shukla
