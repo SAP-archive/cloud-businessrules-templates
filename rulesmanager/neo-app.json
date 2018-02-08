@@ -32,22 +32,6 @@
 				"entryPath": "/test-resources"
 			},
 			"description": "SAPUI5 Test Resources"
-		}, {
-			"path": "/bpmrulesrepository",
-			"target": {
-				"type": "destination",
-				"name": "bpmrulesrepository",
-				"entryPath": "/rules-service"
-			},
-			"description": "backend destination for rules repository access "
-		}, {
-			"path": "/bpmrulesruntime",
-			"target": {
-				"type": "destination",
-				"name": "bpmrulesruntime",
-				"entryPath": "/rules-service"
-			},
-			"description": "backend destination for rules bpmrulesruntime access "
 		}
 
 	],
