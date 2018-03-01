@@ -12,21 +12,32 @@ As an application developer or OEM partners, you can use this template to embed 
 Note: While importing ensure that the project name is rulesmanager
 
 ### Prerequisites
-You need to have the following:
+You need to have the following for **rules** template:
 1. SAP Cloud Platform (Neo) account with an active subscription to Business Rules service.Refer [here](https://blogs.sap.com/2017/04/26/sap-cloud-platform-business-rules-try-it-yourself/) for information on getting a free trial account of SAP Cloud Platform and how to enable SAP Cloud Platform Business Rules Service.
-2. RuleSuperUser role for Runtime and Repository operations.
+2. **RuleSuperUser** role for Runtime and Repository operations.
+3. Developer role to create and deploy SAPUI5 applications in SAP Cloud Platform.
+4. SAP WebIDE Full-Stack service enabled in SAP Cloud Platform.
+
+You need to have the following for **workflow** template:
+1. SAP Cloud Platform (Neo) account with an active subscription to Business Rules and Workflow service. 
+2. **WorkflowDeveloper** role to deploy workflow.
 3. Developer role to create and deploy SAPUI5 applications in SAP Cloud Platform.
 4. SAP WebIDE Full-Stack service enabled in SAP Cloud Platform.
 
 ## Project Overview
-This template is an SAPUI5 Application with standard folder structure. The key files and folder description are as follows:
-1. webapp/view/app.view.js - This is the main file where you will learn how-to embed the RulesBuilder SAPUI5 control in the application.
-2. webapp/controller/app.controller.js - This file will contain the implementation to (a) Initialize business rules vocabulary and decision table models, (b) Setup Rule Builder control and associate rule expression language to it and (c) Implement button control to drive the lifecycle of the business rules like Edit, Save, Activate and Deploy.
-3. webapp/snippets - This folder contains the code snippets that will be inserted in the template during the learning session.
-4. webapp/resources - This folder contains the source files for view and controller for reference.
+This has following template projects:
+- An SAPUI5 Application which helps you understand how to embed decision table control in your custom application.
+  - It has these standard folder structure:
+    - webapp/view/app.view.js - This is the main file where you will learn how-to embed the RulesBuilder SAPUI5 control in the application.
+    - webapp/controller/app.controller.js - This file will contain the implementation to (a) Initialize business rules vocabulary and decision table models, (b) Setup Rule Builder control and associate rule expression language to it and (c) Implement button control to drive the lifecycle of the business rules like Edit, Save, Activate and Deploy.
+    - webapp/snippets - This folder contains the code snippets that will be inserted in the template during the learning session.
+    - webapp/resources - This folder contains the source files for view and controller for reference.
+
+- SAP Cloud Platform Workflow template project **/workflow/purchaseorderapprovaltemplate.zip** which shows how to consume business rules in workflow. 
 
 ## Deployment
-After you have implemented the view and controller, you can deploy the SAPUI5 application in your SAP Cloud Platform account. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
+After you have implemented the view and controller in For **rulemanager** template, you can deploy the SAPUI5 application in your SAP Cloud Platform account. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
+Similarly, after you have configured **workflow** template for service task, you need to deploy the template project and workflow. 
 
 ## Authors
 Archana Shukla
