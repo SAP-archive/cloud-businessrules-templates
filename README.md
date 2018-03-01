@@ -12,7 +12,7 @@ As an application developer or OEM partners, you can use this template to embed 
 Note: While importing ensure that the project name is rulesmanager
 
 ### Prerequisites
-You need to have the following for **rules** template:
+You need to have the following for **rulesmanager** template:
 1. SAP Cloud Platform (Neo) account with an active subscription to Business Rules service.Refer [here](https://blogs.sap.com/2017/04/26/sap-cloud-platform-business-rules-try-it-yourself/) for information on getting a free trial account of SAP Cloud Platform and how to enable SAP Cloud Platform Business Rules Service.
 2. **RuleSuperUser** role for Runtime and Repository operations.
 3. Developer role to create and deploy SAPUI5 applications in SAP Cloud Platform.
@@ -36,7 +36,7 @@ This has following template projects:
 - SAP Cloud Platform Workflow template project **/workflow/purchaseorderapprovaltemplate.zip** which shows how to consume business rules in workflow. 
 
 ## Deployment
-After you have implemented the view and controller in For **rulemanager** template, you can deploy the SAPUI5 application in your SAP Cloud Platform account. To do so, right click on the project and choose option: Deploy --> Deploy to SAP Cloud Platform
+After you have implemented the view and controller in **rulemanager** template, you can deploy the SAPUI5 application in your SAP Cloud Platform account. To do so, right click on the project and choose option: **Deploy --> Deploy to SAP Cloud Platform**.
 Similarly, after you have configured **workflow** template for service task, you need to deploy the template project and workflow. 
 
 ## Authors
