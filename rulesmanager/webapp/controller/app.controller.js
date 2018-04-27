@@ -125,7 +125,6 @@ sap.ui.define([
 		// Step 4C: Implementation for Edit Button press event. This function will enable to the decision table to be edited
 		onEditPress: function() {
 			var ruleBuilderId = this.getView().byId("ruleBuilder");
-			ruleBuilderId.setEditable(true);
 
 			this.getView().byId("cancelButton").setVisible(true);
 			this.getView().byId("deployButton").setVisible(true);
