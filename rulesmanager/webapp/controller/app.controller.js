@@ -1,5 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/model/odata/v2/ODataModel",
+	"sap/rules/ui/services/ExpressionLanguage"
 ], function(Controller) {
 	"use strict";
 
@@ -128,6 +130,7 @@ sap.ui.define([
 
 			this.getView().byId("cancelButton").setVisible(true);
 			this.getView().byId("deployButton").setVisible(true);
+			this.getView().byId("editButton").setVisible(false);
 
 			//********* INSERT THE CODE HERE **************************
 		
@@ -158,6 +161,7 @@ sap.ui.define([
 						ruleBuilderId.setEditable(false);
 						this.getView().byId("cancelButton").setVisible(false);
 						this.getView().byId("deployButton").setVisible(false);
+						this.getView().byId("editButton").setVisible(true);
 					}
 				}),
 				endButton: new sap.m.Button({
@@ -167,6 +171,7 @@ sap.ui.define([
 						ruleBuilderId.setEditable(true);
 						this.getView().byId("cancelButton").setVisible(true);
 						this.getView().byId("deployButton").setVisible(true);
+						this.getView().byId("editButton").setVisible(false);
 					}
 				})
 			});
@@ -182,15 +187,14 @@ sap.ui.define([
 
 			var cancelButton = this.getView().byId("cancelButton");
 			var deployButton = this.getView().byId("deployButton");
+			var editButton = this.getView().byId("editButton");
+			
 			var ruleBuilderId = this.getView().byId("ruleBuilder");
 			var ruleServiceID = jQuery.sap.getUriParameters().get("ruleService");
 			
 			//********* INSERT THE CODE HERE **************************
 			
 
-			ruleBuilderId.setEditable(false);
-			cancelButton.setVisible(false);
-			deployButton.setVisible(false);
 		}
 
 	});
