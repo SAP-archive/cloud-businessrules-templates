@@ -141,6 +141,10 @@ sap.ui.define([
 		// Step 4D: Implementation for Cancel Button press event. This function will cancel the decision editing.
 		onCancelPress: function() {
 			var ruleBuilderId = this.getView().byId("ruleBuilder");
+			var cancelButton = this.getView().byId("cancelButton");
+			var deployButton = this.getView().byId("deployButton");
+			var editButton = this.getView().byId("editButton");
+			
 			ruleBuilderId.setEditable(false);
 
 			//********* INSERT THE CODE HERE **************************
@@ -159,9 +163,9 @@ sap.ui.define([
 						oCancelDialog.close();
 						handleActionPress(oFIParam);
 						ruleBuilderId.setEditable(false);
-						this.getView().byId("cancelButton").setVisible(false);
-						this.getView().byId("deployButton").setVisible(false);
-						this.getView().byId("editButton").setVisible(true);
+						cancelButton.setVisible(false);
+						deployButton.setVisible(false);
+						editButton.setVisible(true);
 					}
 				}),
 				endButton: new sap.m.Button({
@@ -169,9 +173,9 @@ sap.ui.define([
 					press: function() {
 						oCancelDialog.close();
 						ruleBuilderId.setEditable(true);
-						this.getView().byId("cancelButton").setVisible(true);
-						this.getView().byId("deployButton").setVisible(true);
-						this.getView().byId("editButton").setVisible(false);
+						cancelButton.setVisible(true);
+						deployButton.setVisible(true);
+						editButton.setVisible(false);
 					}
 				})
 			});
