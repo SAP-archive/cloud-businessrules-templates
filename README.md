@@ -39,10 +39,10 @@ Here are the details of templates:
       - webapp/resources - This folder contains the source files for view and controller for reference.
 
 - workflows
- - SAP Cloud Platform Workflow template project **/workflow/purchaseorderapprovaltemplate.zip** which shows how to consume business rules in workflow. 
+  - SAP Cloud Platform Workflow template project **/workflow/purchaseorderapprovaltemplate.zip** which shows how to consume business rules in workflow. 
 
 - rulesprojects
- - SAP Cloud Platform Business Rules templates that can be imported and extended to learn on how to author and deploy business rules in SAP Cloud Platform.
+  - SAP Cloud Platform Business Rules templates that can be imported and extended to learn on how to author and deploy business rules in SAP Cloud Platform.
 
 ## Deployment
 There are different deployment routes to these templates:
