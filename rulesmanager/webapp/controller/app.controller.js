@@ -1,5 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/model/odata/v2/ODataModel",
+	"sap/rules/ui/services/ExpressionLanguage"
 ], function(Controller) {
 	"use strict";
 
@@ -128,6 +130,7 @@ sap.ui.define([
 
 			this.getView().byId("cancelButton").setVisible(true);
 			this.getView().byId("deployButton").setVisible(true);
+			this.getView().byId("editButton").setVisible(false);
 
 			//********* INSERT THE CODE HERE **************************
 		
@@ -138,6 +141,10 @@ sap.ui.define([
 		// Step 4D: Implementation for Cancel Button press event. This function will cancel the decision editing.
 		onCancelPress: function() {
 			var ruleBuilderId = this.getView().byId("ruleBuilder");
+			var cancelButton = this.getView().byId("cancelButton");
+			var deployButton = this.getView().byId("deployButton");
+			var editButton = this.getView().byId("editButton");
+			
 			ruleBuilderId.setEditable(false);
 
 			//********* INSERT THE CODE HERE **************************
@@ -156,8 +163,9 @@ sap.ui.define([
 						oCancelDialog.close();
 						handleActionPress(oFIParam);
 						ruleBuilderId.setEditable(false);
-						this.getView().byId("cancelButton").setVisible(false);
-						this.getView().byId("deployButton").setVisible(false);
+						cancelButton.setVisible(false);
+						deployButton.setVisible(false);
+						editButton.setVisible(true);
 					}
 				}),
 				endButton: new sap.m.Button({
@@ -165,8 +173,9 @@ sap.ui.define([
 					press: function() {
 						oCancelDialog.close();
 						ruleBuilderId.setEditable(true);
-						this.getView().byId("cancelButton").setVisible(true);
-						this.getView().byId("deployButton").setVisible(true);
+						cancelButton.setVisible(true);
+						deployButton.setVisible(true);
+						editButton.setVisible(false);
 					}
 				})
 			});
@@ -182,15 +191,14 @@ sap.ui.define([
 
 			var cancelButton = this.getView().byId("cancelButton");
 			var deployButton = this.getView().byId("deployButton");
+			var editButton = this.getView().byId("editButton");
+			
 			var ruleBuilderId = this.getView().byId("ruleBuilder");
 			var ruleServiceID = jQuery.sap.getUriParameters().get("ruleService");
 			
 			//********* INSERT THE CODE HERE **************************
 			
 
-			ruleBuilderId.setEditable(false);
-			cancelButton.setVisible(false);
-			deployButton.setVisible(false);
 		}
 
 	});
